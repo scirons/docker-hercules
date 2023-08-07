@@ -1,0 +1,12 @@
+version : '3'
+services:
+  mvs:
+    build: ./mvs/
+    ports:
+      - "3270:3270"
+      - "8038:8038"
+
+  zos:
+    build: ./zos/
+    ports:
+      - "3270:3270"
